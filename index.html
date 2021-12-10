@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>Insurance Clicker</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="sectionright">
+            <div id="scorebox">
+                <h1><span id="score">0 </span> money</h1>
+                <h2><span id="scorepersecond">0 </span> money per second</h2>
+            </div>
+            <br><br><br><br>
+            <img src="img/geico.png" width="256px" height="256px" onclick="addToScore(clickingPower)"></img>
+            <h3>v1.0</h3>
+        </div>
+        <div class="sectionleft">
+            <br>
+            <h2>Upgrades:</h2>
+            <div id="upgradebox">
+        <span class="has-hover-card">
+
+            <button onclick="buyMascot()">Buy Mascot</button>
+            <span class="hover-card">
+                <p>Cost: 50$</p>
+                <p>1$ per second</p>
+                <p>Owned: <span id="mascots">0</span></p>
+                </span>
+            </span>
+            <br>
+
+            <span class="has-hover-card">
+            <button onclick="buyActor()">Buy Actor</button>
+            <span class="hover-card">
+                <p>Cost: 270$</p>
+                <p>3$ per second</p>
+                <p>Owned: <span id="actors">0</span></p>
+                </span>
+            </span>
+            <br>
+
+            <span class="has-hover-card">
+                <button onclick="buyRefrence()">Cheesy Refrences</button>
+                <span class="hover-card">
+                    <p>Cost: 7560$</p>
+                    <p>56$ per second</p>
+                    <p>Owned: <span id="refrences">0</span></p>
+                    </span>
+                </span>
+                <br>
+
+            <span class="has-hover-card">
+                <button onclick="buyAd()">Low Quality Ads</button>
+                <span class="hover-card">
+                    <p>Cost: 186000$</p>
+                    <p>296$ per second</p>
+                    <p>Owned: <span id="ads">0</span></p>
+                    </span>
+                </span>
+                <br>
+
+            <span class="has-hover-card">
+                <button onclick="buyCandy()">Free Candy</button>
+                <span class="hover-card">
+                    <p>Cost: 2200000$</p>
+                    <p>1700$ per second</p>
+                    <p>Owned: <span id="candys">0</span></p>
+                    </span>
+                </span>
+                <br>
+            
+            <span class="has-hover-card">
+                <button onclick="buyScam()">Money Scams</button>
+                <span class="hover-card">
+                    <p>Cost: 43000000$</p>
+                    <p>1250 0$ per second</p>
+                    <p>Owned: <span id="scams">0</span></p>
+                    </span>
+                </span>
+                <br>
+
+            <span class="has-hover-card">
+                <button onclick="buyHack()">Bank Hackers</button>
+                <span class="hover-card">
+                    <p>Cost: $540000000</p>
+                    <p>67000$ per second</p>
+                    <p>Owned: <span id="hacks">0</span></p>
+                    </span>
+                </span>
+                <br>
+
+            <span class="has-hover-card">
+                <button onclick="buyHeli()">Attack Helicopters</button>
+                <span class="hover-card">
+                    <p>Cost: $7600000000</p>
+                    <p>1960000$ per second</p>
+                    <p>Owned: <span id="helis">0</span></p>
+                    </span>
+                </span>
+                <br>
+
+            <span class="has-hover-card">
+                <button onclick="buyDomination()">World Dominations</button>
+                <span class="hover-card">
+                    <p>Cost: $100000000000</p>
+                    <p>25000000$ per second</p>
+                    <p>Owned: <span id="dominations">0</span></p>
+                    </span>
+                </span>
+                <br>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

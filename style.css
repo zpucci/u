@@ -1,0 +1,73 @@
+body {
+    background-color:whitesmoke;
+}
+
+.sectionLeft {
+    float: right;
+    width: 30%;
+    text-align: right;
+    border: 1px solid black;
+}
+
+.sectionRight {
+    float: left;
+    width: 30%;
+    text-align: center;
+    border: 1px solid black;
+}
+h1, h2, button {
+    margin-left: 10px;
+    margin-right: 25px;
+    margin-bottom:0px;
+    margin-top:0px;
+}
+
+#scorebox {
+    border: 1px solid black;
+    margin-top: 44px;
+    position: relative;
+}
+
+#upgradeBox {
+    border: 1px solid black;
+    margin-top: 25px;
+    position: relative;
+}
+
+button {
+    width: 150px;
+    margin-top: 5px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+h3 {
+    position: absolute;
+    bottom: 0;
+}
+
+.has-hover-card {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-card {
+    display: none;
+    background: #ededed;
+    border: 1px solid black;
+    padding: 10px;
+    position: absolute;
+    top: -10px;
+    left: -175;
+    white-space: nowrap;
+    width: 150px;
+    text-align: center;
+}
+
+.has-hover-card:hover .hover-card {
+    display: inline-block;
+}
+
+p {
+    margin: 0px;
+}
