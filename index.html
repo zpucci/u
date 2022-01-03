@@ -4,14 +4,24 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="row">
         <div class="sectionright">
+            <div id="background">
             <div id="scorebox">
-                <h1><span id="score">0 </span> money</h1>
+                <h1><span id="score">0 </span> money</h1><br>
                 <h2><span id="scorepersecond">0 </span> money per second</h2>
             </div>
+            </div>
             <br><br><br><br>
-            <img src="img/geico.png" width="256px" height="256px" onclick="addToScore(clickingPower)"></img>
+            <img src="img/tiger.png" width="256px" height="256px" onclick="addToScore(clickingPower)"></img>
             <h3>v1.0</h3>
+        </div>
+        <div class="sectionCenter">
+            <br><br>
+            <h1>~ Tiers of Insurance ~</h1><br><br><br><br>
+            <h2 onclick="getCar()">Tier I </h2><br><br><p> Car insurance - Resets game but DOUBLES clicking power and total money - $1 Trillion</p><br><br>
+            <h2 onclick="getHome()">Tier II </h2><br><br><p> Home insurance - Resets game but EVERYTHING is 2 times cheaper - $10 quadrillion</p><br><br>
+            <h2 onclick="getHealth()">Tier III </h2><br><br><p> Health insurance - Resets game but TRIPLES clicking power and total money - $100 quintillion</p>
         </div>
         <div class="sectionleft">
             <br>
@@ -21,8 +31,7 @@
 
             <button onclick="buyMascot()">Buy Mascot</button>
             <span class="hover-card">
-                <p>Cost: 50$</p>
-                <p>1$ per second</p>
+                <p>Cost: <span id="mascotcost">50</span></p>
                 <p>Owned: <span id="mascots">0</span></p>
                 </span>
             </span>
@@ -31,8 +40,7 @@
             <span class="has-hover-card">
             <button onclick="buyActor()">Buy Actor</button>
             <span class="hover-card">
-                <p>Cost: 270$</p>
-                <p>3$ per second</p>
+                <p>Cost: <span id="actorcost">270</span></p>
                 <p>Owned: <span id="actors">0</span></p>
                 </span>
             </span>
@@ -41,8 +49,7 @@
             <span class="has-hover-card">
                 <button onclick="buyRefrence()">Cheesy Refrences</button>
                 <span class="hover-card">
-                    <p>Cost: 7560$</p>
-                    <p>56$ per second</p>
+                    <p>Cost: <span id="refrencecost">7560</span></p>
                     <p>Owned: <span id="refrences">0</span></p>
                     </span>
                 </span>
@@ -51,8 +58,7 @@
             <span class="has-hover-card">
                 <button onclick="buyAd()">Low Quality Ads</button>
                 <span class="hover-card">
-                    <p>Cost: 186000$</p>
-                    <p>296$ per second</p>
+                    <p>Cost: <span id="adcost">186000</span></p>
                     <p>Owned: <span id="ads">0</span></p>
                     </span>
                 </span>
@@ -61,8 +67,7 @@
             <span class="has-hover-card">
                 <button onclick="buyCandy()">Free Candy</button>
                 <span class="hover-card">
-                    <p>Cost: 2200000$</p>
-                    <p>1700$ per second</p>
+                    <p>Cost: <span id="candycost">2200000</span></p>
                     <p>Owned: <span id="candys">0</span></p>
                     </span>
                 </span>
@@ -71,8 +76,7 @@
             <span class="has-hover-card">
                 <button onclick="buyScam()">Money Scams</button>
                 <span class="hover-card">
-                    <p>Cost: 43000000$</p>
-                    <p>1250 0$ per second</p>
+                    <p>Cost: <span id="scamcost">43000000</span></p>
                     <p>Owned: <span id="scams">0</span></p>
                     </span>
                 </span>
@@ -81,8 +85,7 @@
             <span class="has-hover-card">
                 <button onclick="buyHack()">Bank Hackers</button>
                 <span class="hover-card">
-                    <p>Cost: $540000000</p>
-                    <p>67000$ per second</p>
+                    <p>Cost: <span id="hackcost">540000000</span></p>
                     <p>Owned: <span id="hacks">0</span></p>
                     </span>
                 </span>
@@ -91,23 +94,23 @@
             <span class="has-hover-card">
                 <button onclick="buyHeli()">Attack Helicopters</button>
                 <span class="hover-card">
-                    <p>Cost: $7600000000</p>
-                    <p>1960000$ per second</p>
+                    <p>Cost: <span id="helicost">7600000000</span></p>
                     <p>Owned: <span id="helis">0</span></p>
                     </span>
                 </span>
                 <br>
 
             <span class="has-hover-card">
-                <button onclick="buyDomination()">World Dominations</button>
+                <button onclick="buyDomination()">World Domination</button>
                 <span class="hover-card">
-                    <p>Cost: $100000000000</p>
-                    <p>25000000$ per second</p>
+                    <p>Cost: <span id="dominationcost">100000000000</span></p>
                     <p>Owned: <span id="dominations">0</span></p>
                     </span>
                 </span>
                 <br>
-            </div>
+            </div><br>
+                <button id="button" onclick="resetGame()">Reset Game</button>
+        </div>
         </div>
         <script src="script.js"></script>
     </body>
